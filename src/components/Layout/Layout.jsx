@@ -1,11 +1,14 @@
-import React from 'react'
-import SVGpaths from '../SVGpaths/SVGpaths'
+import React from "react";
+import SVGpaths from "../SVGpaths/SVGpaths";
+import SVG from "../SVG/SVG";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
       <SVGpaths />
-      <header className='text-center'>this is header</header>
+      <header className="flex justify-center items-center">
+        <SVG id={"icon--logo-50th"} height="22" width="130" />
+      </header>
       <main className="flex flex-row justify-center items-center grow">
         <SVGpaths />
         {children}
